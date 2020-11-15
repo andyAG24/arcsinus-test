@@ -1,0 +1,64 @@
+.auth-form {
+    flex-grow: 1;
+    .login-field {
+        & > * {
+            display: block;
+        }
+        & > input {
+            width: -webkit-fill-available;
+        }
+    }
+    padding-bottom: 20px;
+    @media screen and (max-width: 768px) {
+        margin: 0 auto;
+    }
+}
+
+.login-form {
+    & > * {
+        margin-top: 40px;
+    }
+    &_additional-buttons {
+        margin-top: 75px;
+    }
+    &_additional-button {
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        color: #67aaf3;
+        background: none;
+        border: none;
+        margin-top: 20px;
+        transition: .5s;
+        &:hover {
+            cursor: pointer;
+            color: #40648c;
+            transition: .5s;
+        }
+    }
+}
+
+.login-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .75em;
+    color: white;
+    width: 100%;
+    padding: 15px 0px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #dfb2fb, #b265fd);
+    background-size: 200%;
+    background-position: -100%;
+    border: none;
+    border-radius: 20px;
+    transition: background .5s ease-out;
+    &:hover {
+        cursor: pointer;
+        background-position: -200%;
+    }
+}
+
+.sms-code {
+    &-error {
+        color: red;
+        font-size: 0.8em;
+    }
+}
